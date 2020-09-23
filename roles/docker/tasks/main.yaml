@@ -1,0 +1,15 @@
+---
+
+  - name: Copy rpms
+    copy:
+      src: ../rpm/
+      dest: /tmp/docker_rpm/
+
+  - name: Install docker
+    shell: yum localinstall -y "{{ docker_rpm }}"
+    args:
+      chdir: /tmp/docker_rpm/
+    become: yes
+
+
+...

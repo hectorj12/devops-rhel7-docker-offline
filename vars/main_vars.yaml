@@ -1,0 +1,5 @@
+---
+
+docker_rpm: "docker-1.13.1-162.git64e9980.el7.centos.x86_64.rpm"
+
+...
