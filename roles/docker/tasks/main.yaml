@@ -6,7 +6,7 @@
       dest: /tmp/docker_rpm/
 
   - name: Install docker
-    shell: yum localinstall -y "{{ docker_rpm }}"
+    shell: rpm -ivh *.rpm
     args:
       chdir: /tmp/docker_rpm/
     become: yes
